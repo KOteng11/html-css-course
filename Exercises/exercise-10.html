@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 10</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 100px 300px 100px;
+    }
+
+    .profile-picture-container {
+      width: 100px;
+      height: 100px;
+      background-color: lightgray;
+    }
+
+    .profile-picture {
+      width: 80px;
+      object-fit: cover;
+      border-radius: 40px;
+
+    }
+
+    .profile-info-container {
+      width: 300px;
+      height: 100px;
+      display: inline-block;
+      background-color: lightblue;
+    }
+
+    .follow-button-container {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      text-align: center;
+      background-color: lightpink;
+    }
+
+    .follow {
+      background-color: #087ACC;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      padding: 6px 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="profile-picture-container">
+      <img src="/Exercises/images/cat1.jpg" class="profile-picture" />
+    </div>
+    <div class="profile-info-container">
+        <p>oliver</p>
+        <p>the cat</p>
+        <p>Popular</p>
+    </div>
+    <div class="follow-button-container">
+      <button class="follow">Follow</button>
+    </div>
+  </div>
+</body>
+</html>

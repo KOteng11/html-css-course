@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 9</title>
+    <style>
+      .square {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        display: inline-block;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        border-radius: 25px;
+        display: inline-block;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Arial;
+      }
+
+      .survey-container {
+        border: 1px solid gray;
+        width: 250px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        margin-bottom: 50px;
+      }
+
+      .survey-question {
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+
+      .youtube-music {
+        width: 270px;
+        background-color: #202020;
+        font-family: Arial;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 12px;
+        margin-bottom: 50px;
+      }
+
+      .youtube-music-title {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .youtube-icon {
+        color: gray;
+        font-size: 12px;
+      }
+
+      .profile {
+        width: 150px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      .profile-picture {
+        width: 150px;
+        object-fit: cover;
+        margin-bottom: 6px;
+      }
+
+      .profile-name {
+        margin-left: 6px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .mutual-friends {
+        margin-left: 6px;
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 6px;
+      }
+
+      .add-friend {
+        background-color: #088BE0;
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 2px;
+        padding: 7px 15px;
+        margin-bottom: 10px;
+        margin-left: 6px;
+        cursor: pointer
+      }
+
+      .add-friend:hover {
+        background-color: #0871BC;
+      }
+
+      .add-friend:active {
+        opacity: 0.8;
+      }
+
+      .page {
+        margin-bottom: 50px;
+      }
+
+      .card {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        padding: 12px;
+        width: 450px;
+        border-radius: 6px;
+      }
+
+      .profile-picture1 {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .text-box {
+        font-size: 18px;
+        border: none;
+        width: 300px;
+        vertical-align: middle;
+      }
+
+      .tweet-button {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="circle"></div>
+    <div class="survey-container">
+      <p class="survey-question">Satisfied with our service?</p>
+      <button class="yes">Yes</button>
+      <button class="no">No</button>
+    </div>
+
+    <div class="youtube-music">
+      <p class="youtube-music-title">
+        Install YouTube Music
+      </p>
+      <p class="youtube-icon">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+    <div class="page">
+      <div class="profile">
+        <img class="profile-picture" src="/Exercises/images/cat1.jpg" alt="cat1" />
+        <p class="profile-name">Oliver</p>
+        <p class="mutual-friends">2 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="profile">
+        <img class="profile-picture" src="/Exercises/images/cat2.jpg" alt="cat1" />
+        <p class="profile-name">Mimi</p>
+        <p class="mutual-friends">3 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+
+      <div class="profile">
+        <img class="profile-picture" src="/Exercises/images/cat3.jpg" alt="cat1" />
+        <p class="profile-name">Rex</p>
+        <p class="mutual-friends">4 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="profile-picture1" src="/Exercises/images/cat1.jpg" alt="cat1" />
+      <input type="text" class="text-box" placeholder="What's happening?" />
+      <button class="tweet-button">Tweet</button>
+    </div>
+  </body>
+</html>
