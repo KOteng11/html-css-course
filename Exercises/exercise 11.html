@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 11</title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    .wrapper-1 {
+      display: grid;
+      grid-template-columns: 200px 75px;
+      margin-bottom: 20px;
+    }
+
+    .wrapper-1-left {
+      background-color: lightblue;
+    }
+
+    .wrapper-1-right {
+      background-color: lightpink;
+    }
+
+    .wrapper-2 {
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+      margin-bottom: 20px;
+    }
+
+    .wrapper-2-left,
+    .wrapper-2-right {
+      background-color: lightblue;
+    }
+
+    .wrapper-2-middle {
+      background-color: lightpink;
+    }
+
+    .wrapper-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 40px;
+    }
+
+    .columns {
+      background-color: lightpink;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 150px 150px 150px;
+      column-gap: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .profile {
+      width: 150px;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-picture {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 4px;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      font-size: 15px;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .mutual-friend-container {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      margin-left: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .profile-thumbnail {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .mutual-friends {
+      color: rgb(96, 96, 96);
+      font-size: 13px;
+      margin-left: 5px;
+    }
+
+    .add-friend-button {
+      background-color: #087ACC;
+      color: white;
+      font-size: 12px;
+      border: none;
+      border-radius: 2px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background-color 0.15s;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .add-friend-button:hover {
+      background-color: #085CAA;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper-1">
+    <div class="wrapper-1-left">200px</div>
+    <div class="wrapper-1-right">75px</div>
+  </div>
+
+  <div class="wrapper-2">
+    <div class="wrapper-2-left">col1</div>
+    <div class="wrapper-2-middle">col2</div>
+    <div class="wrapper-2-right">col3</div>
+  </div>
+
+  <div class="wrapper-3">
+    <div class="columns">Col1</div>
+    <div class="columns">Col2</div>
+    <div class="columns">Col3</div>
+    <div class="columns">Col4</div>
+    <div class="columns">Col5</div>
+    <div class="columns">Col6</div>
+    <div class="columns">Col7</div>
+    <div class="columns">Col8</div>
+  </div>
+
+  <div class="wrapper">
+    <div class="profile">
+      <img src="/Exercises/images/cat1.jpg" class="profile-picture" />
+      <p class="profile-name">Oliver</p>
+      <div class="mutual-friend-container">
+        <img src="/channel-pictures/channel-1.jpeg" class="profile-thumbnail" />
+        <p class="mutual-friends">2 mutual friends</p>
+      </div>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="profile">
+      <img src="/Exercises/images/cat2.jpg" class="profile-picture" />
+      <p class="profile-name">Mimi</p>
+      <div class="mutual-friend-container">
+        <img src="/channel-pictures/channel-2.jpeg" class="profile-thumbnail" />
+        <p class="mutual-friends">3 mutual friends</p>
+      </div>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="profile">
+      <img src="/Exercises/images/cat3.jpg" class="profile-picture" />
+      <p class="profile-name">Rex</p>
+      <div class="mutual-friend-container">
+        <img src="/channel-pictures/channel-3.jpeg" class="profile-thumbnail" />
+        <p class="mutual-friends">4 mutual friends</p>
+      </div>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <style>
+    body {
+      padding-bottom: 1000px;
+    }
+    #wrapper1-div {
+      display: flex;
+      flex-directions: row;
+      margin-bottom: 30px;
+    }
+    #p1-div1 {
+      background-color: lightblue;
+    }
+
+    #p1-div2 {
+      background-color: lightpink;
+    }
+
+    #wrapper2-div {
+      display: flex;
+      flex-directions: row;
+      margin-bottom: 30px;
+    }
+
+    #p2-div1 {
+      background-color: lightblue;
+      width: 100px;
+    }
+
+    #p2-div2 {
+      background-color: lightpink;
+      flex: 1;
+    }
+
+    #wrapper3-div {
+      display: flex;
+      flex-directions: row;
+      margin-bottom: 30px;
+    }
+
+    #p3-div1 {
+      background-color: lightblue;
+      width: 100px;
+    }
+
+    #p3-div2 {
+      background-color: lightpink;
+      flex: 1;
+    }
+
+    #p3-div3 {
+      background-color: lightblue;
+      flex: 2;
+    }
+
+    #wrapper4-div {
+      display: flex;
+      flex-directions: row;
+      margin-bottom: 30px;
+      height: 70px;
+      border: 1px solid gray;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #p4-div1 {
+      background-color: lightblue;
+      flex-basis: 100px;
+    }
+
+    #p4-div2 {
+      background-color: lightpink;
+      flex-basis: 100px;
+    }
+
+    #p4-div3 {
+      background-color: lightblue;
+      flex-basis: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper1-div">
+    <div id="p1-div1">div 1</div>
+    <div id="p1-div2">div 2</div>
+  </div>
+
+  <div id="wrapper2-div">
+    <div id="p2-div1">100px</div>
+    <div id="p2-div2">flex: 1</div>
+  </div>
+
+  <div id="wrapper3-div">
+    <div id="p3-div1">100px</div>
+    <div id="p3-div2">flex: 1</div>
+    <div id="p3-div3">flex: 2</div>
+  </div>
+
+  <div id="wrapper4-div">
+    <div id="p4-div1">100px</div>
+    <div id="p4-div2">flex: 1</div>
+    <div id="p4-div3">flex: 2</div>
+  </div>
+</body>
+</html>

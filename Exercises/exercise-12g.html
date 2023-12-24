@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 12g</title>
+  <style type="text/css">
+    body {
+      height: 1000px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+    #outer-wrapper1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      width: 350px;
+      min-height: 50px;
+      margin-top: 60px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .inner-wrapper1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    .left-section {
+      display: flex;
+      justify-content: center;
+      flex-basis: 50px;
+      min-height: 50px;
+    }
+
+    .profile-picture {
+      width: 50px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .middle-section {
+      flex: 1;
+      margin-left: 12px;
+    }
+
+    .profile-name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .profile-description,
+     .profile-stats {
+      color: lightgray;
+    }
+
+    .profile-stats {
+      font-size: 14px;
+    }
+
+
+    .follow-button {
+      background-color: #088BE0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 15px;
+      transition: background-color 0.15s;
+      cursor: pointer;
+    }
+
+    .follow-button:hover {
+      background-color: #08518B;
+    }
+
+    .follow-button:active {
+      opacity: 0.8;
+    }
+
+    #nav-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 50px;
+      background-color: #7253AC;
+      position: fixed;
+      top: 0;
+    }
+
+    #left-section {
+      flex-basis: 10%;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+
+    #home {
+      font-size: 12px;
+      color: white;
+      font-weight: bold;
+    }
+
+    #middle-section {
+      flex: 1px;
+      max-width: 400px;
+      margin-right: 70px;
+    }
+
+    #search-bar {
+     width: 400px;
+     padding: 6px 10px;
+     border: none;
+     border-radius: 20px;
+    }
+
+    #right-section {
+      display: flex;
+      flex-basis: 10%;
+      justify-content: end;
+      margin-right: 10px;
+    }
+
+    #download-button {
+      font-size: 12px;
+      background-color: #7253AC;
+      color: white;
+      border: 1px solid white;
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-div">
+    <div id="left-section">
+      <p id="home">Home</p>
+    </div>
+    <div id="middle-section">
+      <input type="text" id="search-bar" placeholder="Search" />
+    </div>
+    <div id="right-section">
+      <button id="download-button">Download</button>
+    </div>
+  </div>
+  <div id="outer-wrapper1">
+    <div class="inner-wrapper1">
+      <div class="left-section">
+        <img src="/exercises/images/cat1.jpg" class="profile-picture" />
+      </div>
+      <div class="middle-section">
+        <p class="profile-name">Oliver</p>
+        <p class="profile-description">the cat</p>
+        <p class="profile-stats">Popular</p>
+      </div>
+      <div class="right-section">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+    <div class="inner-wrapper1">
+      <div class="left-section">
+        <img src="/exercises/images/cat2.jpg" class="profile-picture" />
+      </div>
+      <div class="middle-section">
+        <p class="profile-name">Mimi</p>
+        <p class="profile-description">Sleepy cat</p>
+        <p class="profile-stats">Popular</p>
+      </div>
+      <div class="right-section">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+    <div class="inner-wrapper1">
+      <div class="left-section">
+        <img src="/exercises/images/cat3.jpg" class="profile-picture" />
+      </div>
+      <div class="middle-section">
+        <p class="profile-name">Rex</p>
+        <p class="profile-description">Happy Bulldog</p>
+        <p class="profile-stats">Popular</p>
+      </div>
+      <div class="right-section">
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

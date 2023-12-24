@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto, Arial;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
