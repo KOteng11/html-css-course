@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 13</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    .wrapper1-div {
+      display: flex;
+      min-height: 60px;
+    }
+
+    .left1-div{
+       background-color: lightpink;
+       flex-basis: 100px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .items {
+      background-color: black;
+      color: white;
+    }
+
+    .right1-div {
+      background-color: lightblue;
+      flex-basis: 200px;
+    }
+
+    #inner-wrapper1 {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper1-div">
+    <div class="left1-div"><span class="items">item1</span></div>
+    <div class="right1-div"></div>
+  </div>
+
+  <div class="wrapper1-div">
+    <div class="left1-div"></div>
+    <div class="right1-div">
+      <p>row1</p>
+      <div id="inner-wrapper1">
+        <p class="items">row2</p>
+        <p class="items">row2</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 13f</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 440px;
+      min-height: 100px;
+      row-gap: 10px;
+      margin-left: 10px;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      column-gap: 14px;
+      margin-top: 10px;
+    }
+
+    .left-div {
+      width: 50px;
+      min-height: 50px;
+    }
+
+    #profile-picture {
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .right-div {
+      flex: 1;
+    }
+
+    .header-section {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5px;
+    }
+
+    .header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .handler {
+      font-size: 16px;
+      color: rgb(96, 96, 96);
+    }
+
+    #description {
+      line-height: 18px;
+      margin-bottom: 14px;
+    }
+
+    #profile-video-div {
+      width: 90%;
+      min-height: 90px;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid lightgray;
+      border-radius: 14px;
+    }
+
+    .gray-background {
+      width: 150px;
+      background-color: lightgray;
+      border-top-left-radius: 14px;
+      border-bottom-left-radius: 14px;
+      margin-right: 10px;
+    }
+
+    .video-area {
+      padding-top: 10px;
+    }
+
+    .video-type {
+      color: rgb(96, 96, 96);
+      margin-bottom: 5px;
+    }
+
+    .video-description {
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main-container">
+      <div class="left-div">
+        <img src="/Exercises/images/cat3.jpg" id="profile-picture" />
+      </div>
+      <div class="right-div">
+        <div class="header-section">
+          <p class="header">supersimple.dev</p>
+          <p class="handler">@SuperSimpleDev</p>
+        </div>
+        <p id="description">
+          What is backend web development? A complete
+          overview. New video is up!
+        </p>
+
+        <div id="profile-video-div">
+          <div class="gray-background"></div>
+          <div class="video-area">
+            <p class="video-type">youtube.com</p>
+            <p class="video-description">
+              Backend web development - a complete overview (2021)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

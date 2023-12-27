@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 13c & e</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    #outer-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      min-height: 100px;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+      margin-left: 10px;
+      margin-top: 10px;
+      row-gap: 12px;
+      padding-bottom: 20px;
+    }
+
+    #title {
+      font-size: 12px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .inner-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .left-section {
+      width: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-picture {
+      width: 90%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: 6px;
+      row-gap: 3px;
+    }
+
+    .heading {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .header-time-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-title {
+      font-weight: bold;
+    }
+
+    .sub-title {
+      font-size: 13px;
+    }
+
+    .description {
+      font-size: 14px;
+    }
+
+    .time {
+      font-size: 12px;
+    }
+
+    #title,
+    .time,
+    .description{
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer-wrapper">
+    <p id="title">ALL INBOXES</p>
+    <div class="inner-wrapper">
+      <div class="left-section">
+        <img src="/Exercises/images/cat1.jpg" class="profile-picture" />
+      </div>
+      <div class="right-section">
+        <div class="header-time-div">
+          <p class="heading">Chewy Promotions</p>
+          <p class="time">4:58 PM</p>
+        </div>
+        <p class="sub-title">Biggest sales of the year!</p>
+        <p class="description">Hey there! We're writing to tell you about our...</p>
+      </div>
+    </div>
+
+    <div class="inner-wrapper">
+      <div class="left-section">
+        <img src="/Exercises/images/cat2.jpg" class="profile-picture" />
+      </div>
+      <div class="right-section">
+        <div class="header-time-div">
+          <p class="heading">Best Buy</p>
+          <p class="time">12:32 PM</p>
+        </div>
+        <p class="sub-title">Your Best Buy eReceipt</p>
+        <p class="description">Thank you for shopping at Best Buy, here is...</p>
+      </div>
+    </div>
+    <div class="inner-wrapper">
+      <div class="left-section">
+        <img src="/Exercises/images/cat3.jpg" class="profile-picture" />
+      </div>
+      <div class="right-section">
+        <div class="header-time-div">
+          <p class="heading">Netflix</p>
+          <p class="time">9:00 AM</p>
+        </div>
+        <p class="sub-title">Here's what's coming soon to Netflix</p>
+        <p class="description">Brand new movies and shows, old favorites...</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

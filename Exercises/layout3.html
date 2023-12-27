@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Layout 3</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+      }
+
+      #wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        min-height: 100px;
+        background-color: gray;
+        row-gap: 10px;
+      }
+
+      #logo-div {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        min-height: 50px;
+        background-color: lightgray;
+        align-items: center;
+        padding-left: 10px;
+        position: fixed;
+      }
+
+      #main-div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 400px;
+        background-color: gray;
+        justify-content: space-between;
+        column-gap: 2%;
+        margin-top: 60px;
+      }
+
+      #left-section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        padding-left: 10px;
+      }
+
+      #right-section {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+        row-gap: 10px;
+      }
+
+      #header-banner-div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 100px;
+        background-color: lightgray;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #body-area-div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 300px;
+        background-color: lightgray;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 30px;
+        align-items: center;
+        justify-content: center;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+        <div id="logo-div">
+        Logo
+      </div>
+    <div id="wrapper">
+
+      <div id="main-div">
+        <div id="left-section">
+          Side bar Navigation
+        </div>
+        <div id="right-section">
+          <div id="header-banner-div">
+            Header / Banner
+          </div>
+          <div id="body-area-div">
+            Body Area
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        Footer
+      </div>
+    </div>
+  </body>
+</html>
